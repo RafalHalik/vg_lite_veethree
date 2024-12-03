@@ -48,6 +48,8 @@ zephyr_library_sources(
     ${CMAKE_CURRENT_LIST_DIR}/vglite/lv_draw_vglite.c 
     ${CMAKE_CURRENT_LIST_DIR}/vglite/lv_vglite_buf.c 
     ${CMAKE_CURRENT_LIST_DIR}/vglite/lv_vglite_utils.c
+    ${CMAKE_CURRENT_LIST_DIR}/vglite/lvgl_support.c
+    ${CMAKE_CURRENT_LIST_DIR}/vglite/vglite_support.c
 )
 
 
@@ -57,7 +59,7 @@ target_compile_definitions(${MCUX_SDK_PROJECT_NAME} PUBLIC
 )
 
 
-zephyr_library_link_libraries(USB_HOST_VEETHREE)
-target_link_libraries(USB_HOST_VEETHREE INTERFACE zephyr_interface)
+zephyr_library_link_libraries(VG_LITE_VEETHREE)
+target_link_libraries(VG_LITE_VEETHREE INTERFACE zephyr_interface)
 
 endif()
