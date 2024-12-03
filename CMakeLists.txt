@@ -55,7 +55,7 @@ zephyr_library_sources(
     vglite/vglite_support.c
 
     video/fsl_dc_fb_elcdif.c
-    video/fsl_dc_fb_lcdifv2.
+    video/fsl_dc_fb_lcdifv2.c
     video/fsl_hx8394.c 
     video/fsl_mipi_dsi_cmd.c
     video/fsl_rm68191.c 
