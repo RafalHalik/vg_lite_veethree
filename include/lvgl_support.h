@@ -7,7 +7,6 @@
 
 #ifndef LVGL_SUPPORT_H
 #define LVGL_SUPPORT_H
-
 #include <stdint.h>
 #include "display_support.h"
 

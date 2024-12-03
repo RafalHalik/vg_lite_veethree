@@ -4,9 +4,10 @@
  *
  * SPDX-License-Identifier: BSD-3-Clause
  */
+#include "sdbsajkjasdnbaskdfhiaf.h"
 #include <zephyr/kernel.h>
 
-#include "lvgl_support.h"
+#include "/workdir/projects/external_modules/vg_lite_veethree/include/lvgl_support.h"
 #include "lvgl.h"
 #if defined(SDK_OS_FREE_RTOS)
 #include "FreeRTOS.h"

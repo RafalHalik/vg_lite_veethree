@@ -1,3 +1,4 @@
+name: vg_lite_veethree
 build:
   cmake: .
   kconfig: Kconfig

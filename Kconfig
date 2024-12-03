@@ -1,5 +1,4 @@
 config VG_LITE_VEETHREE
-    bool "Enable Hardware acceleration for veethree apps"
-    depends on LVGL_VEETHREE
+    bool "Enable Hardware acceleration for veethree apps"   
     help
       Enable this setting to use hardware acceleration for graphics applications this must be used in conjuction with lvgl
