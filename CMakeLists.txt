@@ -2,7 +2,6 @@
 
 if(CONFIG_VG_LITE_VEETHREE)
 
-message(FATAL_ERROR "hello i died")
 
 set(ZEPHYR_CURRENT_LIBRARY vg_lite_veethree)
 
