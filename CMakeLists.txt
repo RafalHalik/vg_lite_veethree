@@ -5,7 +5,7 @@ if(CONFIG_VG_LITE_VEETHREE)
 
 set(ZEPHYR_CURRENT_LIBRARY vg_lite_veethree)
 
-zephyr_interface_library_name(VG_LITE_VEETHREE)
+zephyr_interface_library_named(VG_LITE_VEETHREE)
 zephyr_library()
 
 zephyr_include_directories(vg_lite)
