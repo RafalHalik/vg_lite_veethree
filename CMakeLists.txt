@@ -9,6 +9,7 @@ zephyr_library()
 zephyr_include_directories(vg_lite)
 
 target_include_directories(
+    ${CMAKE_CURRENT_LIST_DIR}/AdditionalDriver
     ${CMAKE_CURRENT_LIST_DIR}/vglite
     ${CMAKE_CURRENT_LIST_DIR}/vglite/inc
     ${CMAKE_CURRENT_LIST_DIR}/vglite/font
@@ -16,6 +17,7 @@ target_include_directories(
     ${CMAKE_CURRENT_LIST_DIR}/vglite/VGLite/rtos
     ${CMAKE_CURRENT_LIST_DIR}/vglite/VGLiteKernel
     ${CMAKE_CURRENT_LIST_DIR}/vglite/VGLiteKernel/rtos
+    ${CMAKE_CURRENT_LIST_DIR}/video
 )
 
 zephyr_library_sources(
@@ -50,6 +52,16 @@ zephyr_library_sources(
     ${CMAKE_CURRENT_LIST_DIR}/vglite/lv_vglite_utils.c
     ${CMAKE_CURRENT_LIST_DIR}/vglite/lvgl_support.c
     ${CMAKE_CURRENT_LIST_DIR}/vglite/vglite_support.c
+
+    ${CMAKE_CURRENT_LIST_DIR}/video/fsl_dc_fb_elcdif.c
+    ${CMAKE_CURRENT_LIST_DIR}/video/fsl_dc_fb_lcdifv2.
+    ${CMAKE_CURRENT_LIST_DIR}/video/fsl_hx8394.c 
+    ${CMAKE_CURRENT_LIST_DIR}/video/fsl_mipi_dsi_cmd.c
+    ${CMAKE_CURRENT_LIST_DIR}/video/fsl_rm68191.c 
+    ${CMAKE_CURRENT_LIST_DIR}/video/fsl_rm68200.c 
+    ${CMAKE_CURRENT_LIST_DIR}/video/fsl_video_common.c
+
+    ${CMAKE_CURRENT_LIST_DIR}/AdditionalDriver/fsl_lcdifv2.c
 )
 
 

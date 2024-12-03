@@ -32,7 +32,7 @@
 #include "vglite_support.h"
 #endif
 
-#include "../include/vglite_support.h"
+// #include "../include/vglite_support.h"
 
 #if LV_USE_GPU_NXP_PXP
 #include "draw/nxp/pxp/lv_draw_pxp_blend.h"
