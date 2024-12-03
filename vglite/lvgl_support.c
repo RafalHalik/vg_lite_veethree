@@ -4,7 +4,7 @@
  *
  * SPDX-License-Identifier: BSD-3-Clause
  */
-#include "sdbsajkjasdnbaskdfhiaf.h"
+
 #include <zephyr/kernel.h>
 
 #include "/workdir/projects/external_modules/vg_lite_veethree/include/lvgl_support.h"
