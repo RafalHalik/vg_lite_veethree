@@ -27,7 +27,7 @@
 
 // #include "fsl_gt911.h"
 #include <zephyr/drivers/display.h>
-#if LV_USE_GPU_NXP_VG_LITE
+#if VG_LITE_VEETHREE
 #include "vg_lite.h"
 #include "vglite_support.h"
 #endif

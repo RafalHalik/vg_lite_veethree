@@ -40,8 +40,8 @@ extern "C" {
 
 #include "lv_conf_internal.h"
 
-#if LV_USE_GPU_NXP_VG_LITE
-#include "../../sw/lv_draw_sw.h"
+#if VG_LITE_VEETHREE
+#include "/workdir/modules/lib/gui/lvgl/src/draw/sw/lv_draw_sw.h"
 
 /*********************
  *      DEFINES
@@ -63,7 +63,7 @@ void lv_draw_vglite_ctx_deinit(struct _lv_disp_drv_t * drv, lv_draw_ctx_t * draw
 /**********************
  *      MACROS
  **********************/
-#endif /*LV_USE_GPU_NXP_VG_LITE*/
+#endif /*VG_LITE_VEETHREE*/
 
 #ifdef __cplusplus
 } /*extern "C"*/

@@ -39,10 +39,10 @@ extern "C" {
  *********************/
 #include "lv_conf_internal.h"
 
-#if LV_USE_GPU_NXP_VG_LITE
+#if VG_LITE_VEETHREE
 #include "vg_lite.h"
-#include "../../sw/lv_draw_sw.h"
-#include "../../../misc/lv_log.h"
+#include "/workdir/modules/lib/gui/lvgl/src/draw/sw/lv_draw_sw.h"
+// #include "../../../misc/lv_log.h"
 
 /*********************
  *      DEFINES
@@ -189,7 +189,7 @@ static inline void lv_vglite_disable_scissor(void)
     vg_lite_disable_scissor();
 }
 
-#endif /*LV_USE_GPU_NXP_VG_LITE*/
+#endif /*VG_LITE_VEETHREE*/
 
 #ifdef __cplusplus
 } /*extern "C"*/

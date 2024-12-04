@@ -33,7 +33,7 @@
 
 #include "lv_draw_vglite_blend.h"
 
-#if LV_USE_GPU_NXP_VG_LITE
+#if VG_LITE_VEETHREE
 #include "lv_vglite_buf.h"
 #include "lv_vglite_utils.h"
 
@@ -631,4 +631,4 @@ static void align_y(lv_area_t * area, lv_color_t ** buf, lv_coord_t stride)
 }
 #endif /*VG_LITE_BLIT_SPLIT_ENABLED*/
 
-#endif /*LV_USE_GPU_NXP_VG_LITE*/
+#endif /*VG_LITE_VEETHREE*/

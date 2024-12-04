@@ -33,7 +33,7 @@
 
 #include "lv_draw_vglite_rect.h"
 
-#if LV_USE_GPU_NXP_VG_LITE
+#if VG_LITE_VEETHREE
 #include "lv_vglite_buf.h"
 #include <math.h>
 
@@ -456,4 +456,4 @@ static void lv_vglite_create_rect_path_data(int32_t * path_data, uint32_t * path
     *path_data_size = pidx * sizeof(int32_t);
 }
 
-#endif /*LV_USE_GPU_NXP_VG_LITE*/
+#endif /*VG_LITE_VEETHREE*/

@@ -33,7 +33,7 @@
 
 #include "lv_draw_vglite_line.h"
 
-#if LV_USE_GPU_NXP_VG_LITE
+#if VG_LITE_VEETHREE
 #include "lv_vglite_buf.h"
 #include <math.h>
 
@@ -139,4 +139,4 @@ lv_res_t lv_gpu_nxp_vglite_draw_line(const lv_point_t * point1, const lv_point_t
  *   STATIC FUNCTIONS
  **********************/
 
-#endif /*LV_USE_GPU_NXP_VG_LITE*/
+#endif /*VG_LITE_VEETHREE*/

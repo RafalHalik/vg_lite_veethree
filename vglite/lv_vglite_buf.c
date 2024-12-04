@@ -33,7 +33,7 @@
 
 #include "lv_vglite_buf.h"
 
-#if LV_USE_GPU_NXP_VG_LITE
+#if VG_LITE_VEETHREE
 
 /*********************
  *      DEFINES
@@ -138,4 +138,4 @@ static inline void lv_vglite_set_buf_ptr(vg_lite_buffer_t * vgbuf, const lv_colo
     vgbuf->address = (uint32_t)vgbuf->memory;
 }
 
-#endif /*LV_USE_GPU_NXP_VG_LITE*/
+#endif /*VG_LITE_VEETHREE*/

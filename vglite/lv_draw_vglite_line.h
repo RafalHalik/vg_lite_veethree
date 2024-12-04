@@ -40,9 +40,9 @@ extern "C"
  *********************/
 #include "lv_conf_internal.h"
 
-#if LV_USE_GPU_NXP_VG_LITE
+#if VG_LITE_VEETHREE
 #include "lv_vglite_utils.h"
-#include "../../lv_draw_line.h"
+#include "/workdir/modules/lib/gui/lvgl/src/draw/lv_draw_line.h"
 
 /*********************
  *      DEFINES
@@ -74,7 +74,7 @@ lv_res_t lv_gpu_nxp_vglite_draw_line(const lv_point_t * point1, const lv_point_t
  *      MACROS
  **********************/
 
-#endif /*LV_USE_GPU_NXP_VG_LITE*/
+#endif /*VG_LITE_VEETHREE*/
 
 #ifdef __cplusplus
 } /*extern "C"*/

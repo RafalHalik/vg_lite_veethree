@@ -33,7 +33,7 @@
 
 #include "lv_draw_vglite.h"
 
-#if LV_USE_GPU_NXP_VG_LITE
+#if VG_LITE_VEETHREE
 #include <math.h>
 #include "lv_draw_vglite_blend.h"
 #include "lv_draw_vglite_line.h"
@@ -42,7 +42,7 @@
 #include "lv_vglite_buf.h"
 
 #if LV_COLOR_DEPTH != 32
-    #include "../../../core/lv_refr.h"
+    #include "/workdir/modules/lib/gui/lvgl/src/core/lv_refr.h"
 #endif
 
 /*********************
@@ -554,4 +554,4 @@ static void lv_draw_vglite_arc(lv_draw_ctx_t * draw_ctx, const lv_draw_arc_dsc_t
         lv_draw_sw_arc(draw_ctx, dsc, center, radius, start_angle, end_angle);
 }
 
-#endif /*LV_USE_GPU_NXP_VG_LITE*/
+#endif /*VG_LITE_VEETHREE*/

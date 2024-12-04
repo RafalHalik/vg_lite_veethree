@@ -13,17 +13,18 @@
 #include "FreeRTOS.h"
 #include "semphr.h"
 #endif
-#include "../include/board.h"
+#include "/workdir/projects/exteral_modules/vg_lite_veethree/include/board.h"
 
 #include "fsl_gpio.h"
 #include "fsl_cache.h"
-#include "fsl_debug_console.h"
+// #include "fsl_debug_console.h"
 
 // #include "fsl_gt911.h"
 #include <zephyr/drivers/display.h>
-#if LV_USE_GPU_NXP_VG_LITE
 #include "vg_lite.h"
 #include "vglite_support.h"
+#if VG_LITE_VEETHREE
+
 #endif
 
 #include "../include/vglite_support.h"
@@ -104,7 +105,7 @@ const dc_fb_t g_dc = {
  ******************************************************************************/
 void DEMO_FlushDisplay(lv_disp_drv_t *disp_drv, const lv_area_t *area, lv_color_t *color_p);
 
-#if (LV_USE_GPU_NXP_VG_LITE || LV_USE_GPU_NXP_PXP)
+#if (VG_LITE_VEETHREE || LV_USE_GPU_NXP_PXP)
 static void DEMO_CleanInvalidateCache(lv_disp_drv_t *disp_drv);
 #endif
 static void BOARD_PullPanelResetPin(bool pullUp);
@@ -421,7 +422,7 @@ void lv_port_disp_init(void)
     /*Used to copy the buffer's content to the display*/
     disp_drv.flush_cb = DEMO_FlushDisplay;
 
-#if (LV_USE_GPU_NXP_VG_LITE || LV_USE_GPU_NXP_PXP)
+#if (VG_LITE_VEETHREE || LV_USE_GPU_NXP_PXP)
     disp_drv.clean_dcache_cb = DEMO_CleanInvalidateCache;
 #endif
  printf("%d %s\r\n", __LINE__, __FILE__);
@@ -470,7 +471,7 @@ static void DEMO_BufferSwitchOffCallback(void *param, void *switchOffBuffer)
 #endif
 }
 
-#if (LV_USE_GPU_NXP_VG_LITE || LV_USE_GPU_NXP_PXP)
+#if (VG_LITE_VEETHREE || LV_USE_GPU_NXP_PXP)
 static void DEMO_CleanInvalidateCache(lv_disp_drv_t *disp_drv)
 {
     DEMO_FLUSH_DCACHE();
@@ -533,7 +534,7 @@ void DEMO_FlushDisplay(lv_disp_drv_t *disp_drv, const lv_area_t *area, lv_color_
     lv_gpu_nxp_pxp_blit(((lv_color_t *)inactiveFrameBuffer), &dest_area, DEMO_BUFFER_WIDTH, color_p, area,
                         lv_area_get_width(area), LV_OPA_COVER, LV_DISP_ROT_270);
     /* Fix the race issue between PXP and Display controller when VG_Lite is enabled */
-#if LV_USE_GPU_NXP_VG_LITE
+#if VG_LITE_VEETHREE
     lv_gpu_nxp_pxp_wait();
 #endif
 

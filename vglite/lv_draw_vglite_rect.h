@@ -39,9 +39,9 @@ extern "C" {
  *********************/
 #include "lv_conf_internal.h"
 
-#if LV_USE_GPU_NXP_VG_LITE
+#if VG_LITE_VEETHREE
 #include "lv_vglite_utils.h"
-#include "../../lv_draw_rect.h"
+#include "/workdir/modules/lib/gui/lvgl/src/draw/lv_draw_rect.h"
 
 /*********************
  *      DEFINES
@@ -88,7 +88,7 @@ lv_res_t lv_gpu_nxp_vglite_draw_border_generic(const lv_area_t * coords, const l
  *      MACROS
  **********************/
 
-#endif /*LV_USE_GPU_NXP_VG_LITE*/
+#endif /*VG_LITE_VEETHREE*/
 
 #ifdef __cplusplus
 } /*extern "C"*/

@@ -33,8 +33,8 @@
 
 #include "lv_vglite_utils.h"
 
-#if LV_USE_GPU_NXP_VG_LITE
-#include "../../../core/lv_refr.h"
+#if VG_LITE_VEETHREE
+#include "/workdir/modules/lib/gui/lvgl/src/core/lv_refr.h"
 
 /*********************
  *      DEFINES
@@ -146,4 +146,4 @@ static inline void invalidate_cache(void)
         disp->driver->clean_dcache_cb(disp->driver);
 }
 
-#endif /*LV_USE_GPU_NXP_VG_LITE*/
+#endif /*VG_LITE_VEETHREE*/

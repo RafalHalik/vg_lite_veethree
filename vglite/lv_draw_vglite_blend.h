@@ -40,7 +40,7 @@ extern "C" {
 
 #include "lv_conf_internal.h"
 
-#if LV_USE_GPU_NXP_VG_LITE
+#if VG_LITE_VEETHREE
 #include "lv_vglite_utils.h"
 
 /*********************
@@ -159,7 +159,7 @@ lv_res_t lv_gpu_nxp_vglite_buffer_copy(lv_color_t * dest_buf, const lv_area_t * 
  *      MACROS
  **********************/
 
-#endif /*LV_USE_GPU_NXP_VG_LITE*/
+#endif /*VG_LITE_VEETHREE*/
 
 #ifdef __cplusplus
 } /*extern "C"*/

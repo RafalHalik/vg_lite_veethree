@@ -507,11 +507,11 @@
 #endif
 
 /*Use NXP's VG-Lite GPU iMX RTxxx platforms*/
-#ifndef LV_USE_GPU_NXP_VG_LITE
-    #ifdef CONFIG_LV_USE_GPU_NXP_VG_LITE
-        #define LV_USE_GPU_NXP_VG_LITE CONFIG_LV_USE_GPU_NXP_VG_LITE
+#ifndef VG_LITE_VEETHREE
+    #ifdef CONFIG_VG_LITE_VEETHREE
+        #define VG_LITE_VEETHREE CONFIG_VG_LITE_VEETHREE
     #else
-        #define LV_USE_GPU_NXP_VG_LITE 0
+        #define VG_LITE_VEETHREE 0
     #endif
 #endif
 

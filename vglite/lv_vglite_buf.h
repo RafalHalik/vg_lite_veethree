@@ -39,9 +39,9 @@ extern "C" {
  *********************/
 #include "lv_conf_internal.h"
 
-#if LV_USE_GPU_NXP_VG_LITE
+#if VG_LITE_VEETHREE
 #include "vg_lite.h"
-#include "../../sw/lv_draw_sw.h"
+#include "/workdir/modules/lib/gui/lvgl/src/draw/sw/lv_draw_sw.h"
 
 /*********************
  *      DEFINES
@@ -115,7 +115,7 @@ void lv_vglite_set_buf(vg_lite_buffer_t * vgbuf, const lv_color_t * buf,
  *      MACROS
  **********************/
 
-#endif /*LV_USE_GPU_NXP_VG_LITE*/
+#endif /*VG_LITE_VEETHREE*/
 
 #ifdef __cplusplus
 } /*extern "C"*/
