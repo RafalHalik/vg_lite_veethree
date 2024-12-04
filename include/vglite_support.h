@@ -14,8 +14,8 @@
 #include "lvgl_support.h"
 // #include "lvgl.h"
 #if defined(SDK_OS_FREE_RTOS)
-#include "FreeRTOS.h"
-#include "semphr.h"
+// #include "FreeRTOS.h"
+// #include "semphr.h"
 #endif
 // #include "board.h"
 #include "/workdir/modules/hal/nxp/mcux/mcux-sdk/boards/evkmimxrt1160/board.h"

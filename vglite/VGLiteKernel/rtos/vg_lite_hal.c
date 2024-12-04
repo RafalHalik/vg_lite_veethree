@@ -32,9 +32,9 @@
 #include "vg_lite_os.h"
 
 #if !_BAREMETAL
-#include "FreeRTOS.h"
-#include "semphr.h"
-#include "task.h"
+// #include "FreeRTOS.h"
+// #include "semphr.h"
+// #include "task.h"
 #if !defined(VG_DRIVER_SINGLE_THREAD)
 #include "queue.h"
 #endif /* not defined(VG_DRIVER_SINGLE_THREAD) */

@@ -8,8 +8,8 @@
 #include <zephyr/kernel.h>
 #include "fsl_video_common.h"
 #if defined(SDK_OS_FREE_RTOS)
-#include "FreeRTOS.h"
-#include "task.h"
+// #include "FreeRTOS.h"
+// #include "task.h"
 #endif
 
 /*******************************************************************************

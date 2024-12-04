@@ -8,8 +8,8 @@
 
 #include "fsl_dc_fb_lcdifv2.h"
 #if defined(SDK_OS_FREE_RTOS)
-#include "FreeRTOS.h"
-#include "task.h"
+// #include "FreeRTOS.h"
+// #include "task.h"
 #endif
 
 /*******************************************************************************
