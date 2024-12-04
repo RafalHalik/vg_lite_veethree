@@ -13,7 +13,7 @@
 #include "FreeRTOS.h"
 #include "semphr.h"
 #endif
-#include "board.h"
+#include "../include/board.h"
 
 #include "fsl_gpio.h"
 #include "fsl_cache.h"
