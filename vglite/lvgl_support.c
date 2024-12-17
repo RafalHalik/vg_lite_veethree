@@ -13,7 +13,7 @@
 #include "FreeRTOS.h"
 #include "semphr.h"
 #endif
-#include "/workdir/projects/exteral_modules/vg_lite_veethree/include/board.h"
+#include "/workdir/projects/external_modules/vg_lite_veethree/include/board.h"
 
 #include "fsl_gpio.h"
 #include "fsl_cache.h"
